@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const countdownContainer = document.getElementById('countdown-container');
-  const themeButton = document.getElementById('theme-button');
+  const dayThemeButton = document.getElementById('day-theme-button');
+  const nightThemeButton = document.getElementById('night-theme-button');
+  const customThemeButton = document.getElementById('custom-theme-button');
   const colorPicker = document.getElementById('color-picker');
   let currentTheme = 'day'; // Default theme
 
@@ -42,65 +44,47 @@ document.addEventListener('DOMContentLoaded', () => {
       if (theme === 'day') {
           body.classList.add('day-theme');
           body.style.backgroundColor = '#fff'; // Light background for day theme
-          themeButton.textContent = 'Night Theme'; // Set button label to "Night"
-
+          currentTheme = 'day';
       } else if (theme === 'night') {
           body.classList.add('night-theme');
           body.style.backgroundColor = '#333'; // Dark background for night theme
-          themeButton.textContent = 'Custom Theme'; // Set button label to "Custom"
+          currentTheme = 'night';
       } else if (theme === 'custom' && customColor) {
           body.classList.add('custom-theme');
           body.style.backgroundColor = customColor; // Apply custom color
-          themeButton.textContent = 'Day Theme'; // Set button label to "Day"
-      }
-  }
-
-  // Function to toggle the theme
-  function toggleTheme() {
-      if (currentTheme === 'day') {
-          currentTheme = 'night';
-          applyTheme('night');
-
-          //hide the color picker
-          colorPicker.style.display = 'none';
-      } else if (currentTheme === 'night') {
           currentTheme = 'custom';
-          //applyTheme('custom');
-
-          colorPicker.style.display = 'block'; //show the color picker
-          themeButton.textContent = 'Choose a color';
-          themeButton.style.display = 'none';
-
-
-      } else {
-          currentTheme = 'day';
-          applyTheme('day');
       }
   }
 
-  // Event listener for the theme button
-  themeButton.addEventListener('click', toggleTheme);
+  // Event listener for the day theme button
+  dayThemeButton.addEventListener('click', () => {
+      applyTheme('day');
+      colorPicker.style.display = 'none'; // Hide color picker
+  });
+
+  // Event listener for the night theme button
+  nightThemeButton.addEventListener('click', () => {
+      applyTheme('night');
+      colorPicker.style.display = 'none'; // Hide color picker
+  });
+
+  // Event listener for the custom theme button
+  customThemeButton.addEventListener('click', () => {
+      colorPicker.style.display = 'block'; // Show color picker
+  });
 
   // Event listeners for the color picker buttons
   colorPicker.querySelectorAll('button').forEach(button => {
       button.addEventListener('click', () => {
           const color = button.dataset.color;
           applyTheme('custom', color);
-          currentTheme = 'day';
-          themeButton.style.display = 'block';
-          themeButton.textContent = 'Day Theme';
-          colorPicker.style.display = 'none';
-
-
       });
   });
-
 
   // Function to apply the theme on start
   function applyThemeOnStart() {
       applyTheme(currentTheme);
   }
-
 
   // Main function to initialize and start the countdowns
   async function initializeCountdowns() {
