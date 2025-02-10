@@ -1,25 +1,178 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>FlipDown Example</title>
+    <title>Dynamic FlipDown Examples</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        /* Modified CSS for centered and themeable layout */
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            transition: background-color 0.3s ease;
+            /* Smooth transition for theme changes */
+            max-width: 1200px; /* Limit maximum width of the page */
+            margin: 0 auto; /* Center the page horizontally */
+
+        }
+
+        #countdown-container {
+            display: flex;
+            flex-direction: column;
+            /* Arrange vertically */
+            align-items: center;
+            /* Center horizontally */
+            width: auto;
+            /* Set a fixed width */
+            margin: 20px auto;
+            /* Center the column */
+
+        }
+
+        .example {
+            font-family: 'Roboto', sans-serif;
+            width: auto;  /* set the example width to be fixed so it can be set on its own row */
+            height: 250px;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .example h1 {
+            text-align: center;
+            font-weight: 100;
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .example .flipdown {
+            margin: auto;
+        }
+
+        /* Theme button styles */
+        #theme-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            /* Smooth transition for hover effect */
+        }
+
+        #theme-button:hover {
+            background-color: #555;
+        }
+
+        .buttons {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Custom color picker */
+        #color-picker {
+            display: none;
+            /* Initially hidden */
+            position: absolute;
+            top: 50px;
+            /* Adjust as needed */
+            left: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 10;
+            /* Ensure it's on top */
+        }
+
+        #color-picker button {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        /* Example color buttons */
+        .color-red {
+            background-color: red;
+        }
+
+        .color-green {
+            background-color: green;
+        }
+
+        .color-blue {
+            background-color: blue;
+        }
+
+        .color-yellow {
+            background-color: yellow;
+        }
+
+        .color-purple {
+            background-color: purple;
+        }
+
+        .color-orange {
+            background-color: orange;
+        }
+
+        .color-pink {
+            background-color: pink;
+        }
+
+        .color-teal {
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Theme toggle button -->
+    <button id="theme-button">Toggle Theme</button>
+
+    <!-- Color picker -->
+    <div id="color-picker">
+        <button class="color-red" data-color="red"></button>
+        <button class="color-green" data-color="green"></button>
+        <button class="color-blue" data-color="blue"></button>
+        <button class="color-yellow" data-color="yellow"></button>
+        <button class="color-purple" data-color="purple"></button>
+        <button class="color-orange" data-color="orange"></button>
+        <button class="color-pink" data-color="pink"></button>
+        <button class="color-teal" data-color="teal"></button>
+    </div>
+
+    <div id="countdown-container">
+        <!-- Countdown timers will be dynamically added here -->
+    </div>
+
+
     <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-  </head>
-  <body>
-    <div class="example">
-      <h1>FlipDown.js</h1>
-      <p>⏰ A lightweight and performant flip styled countdown clock</p>
-      <div id="flipdown" class="flipdown"></div>
-      <div class="buttons">
-        <p>Version: <span id="ver"></span> (&lt;11KB minified)</p>
-        <a href="https://github.com/PButcher/flipdown#flipdown" class="button"><i class="fab fa-github"></i> <span>Get started</span></a>
-      </div>
-    </div>
-  </body>
+
+</body>
+
 </html>
