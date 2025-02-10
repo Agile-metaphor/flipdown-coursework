@@ -15,12 +15,12 @@
     "type": "git",
     "url": "git+ssh://git@github.com/PButcher/flipdown.git"
   },
-  "author": "Peter Butcher <pbutcher93@gmail.com>",
+  "author": "David Adesoye-Amoo <dadesoyeamoo@gmail.com>,Peter Butcher <pbutcher93@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/PButcher/flipdown/issues"
   },
-  "homepage": "https://github.com/PButcher/flipdown#readme",
+  "homepage": "https://github.com/Agile-metaphor/flipdown-coursework ,https://github.com/PButcher/flipdown#readme",
   "dependencies": {
     "http-server": "^14.1.1"
   },
@@ -29,6 +29,7 @@
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.5",
     "babel-preset-minify": "^0.5.0",
+    "http-server": "^14.1.1",
     "uglifycss": "0.0.29"
   }
 }
