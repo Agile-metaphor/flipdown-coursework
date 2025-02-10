@@ -144,3 +144,15 @@ body.light-theme .buttons .button:hover {
     display: inline-block;
   }
 }
+  
+/* Day Theme */
+body.day-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Night Theme */
+body.night-theme {
+  background-color: #333;
+  color: #fff;
+}
