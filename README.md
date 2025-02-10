@@ -164,8 +164,8 @@ var flipdown = new FlipDown(1538137672)
 
 ## Acknowledgements
 
-Thanks to the following people for their suggestions/fixes:
-
+Thanks to the following people:
+- [@PButcher]([https://github.com/PButcher]) his entire flipdown repository
 - [@chuckbergeron](https://github.com/chuckbergeron) for his help with making FlipDown responsive.
 - [@vasiliki-b](https://github.com/vasiliki-b) for spotting and fixing the Safari backface-visibility issue.
 - [@joeinnes](https://github.com/joeinnes) for adding i18n to rotor group headings.
