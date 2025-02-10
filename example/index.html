@@ -24,8 +24,11 @@
             background-color: #fff;
             transition: background-color 0.3s ease;
             /* Smooth transition for theme changes */
-            max-width: 1200px; /* Limit maximum width of the page */
-            margin: 0 auto; /* Center the page horizontally */
+            max-width: 1200px;
+            /* Limit maximum width of the page */
+            margin: 0 auto;
+            /* Center the page horizontally */
+            font-family: 'Roboto', sans-serif;
 
         }
 
@@ -36,15 +39,14 @@
             align-items: center;
             /* Center horizontally */
             width: auto;
-            /* Set a fixed width */
+            /* Fixed width or auto? */
             margin: 20px auto;
             /* Center the column */
-
         }
 
         .example {
-            font-family: 'Roboto', sans-serif;
-            width: auto;  /* set the example width to be fixed so it can be set on its own row */
+            width: auto;
+            /* set the example width to be fixed so it can be set on its own row */
             height: 250px;
             margin: 10px;
             padding: 10px;
@@ -64,12 +66,17 @@
             margin: auto;
         }
 
-        /* Theme button styles */
-        #theme-button {
+        /* Settings icon and dropdown styles */
+        .settings-container {
             position: absolute;
             top: 10px;
             left: 10px;
-            padding: 10px 15px;
+            z-index: 100;
+            /* Ensure it's on top */
+        }
+
+        .settings-icon {
+            padding: 10px;
             background-color: #333;
             color: #fff;
             border: none;
@@ -79,30 +86,46 @@
             /* Smooth transition for hover effect */
         }
 
-        #theme-button:hover {
+        .settings-icon:hover {
             background-color: #555;
         }
 
-        .buttons {
-            width: 100%;
-            text-align: center;
-            margin-top: 20px;
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .settings-container:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content button {
+            display: block;
+            padding: 8px 12px;
+            border: none;
+            background: none;
+            text-align: left;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            /* Smooth transition for hover effect */
+            border-radius: 3px;
+        }
+
+        .dropdown-content button:hover {
+            background-color: #ddd;
         }
 
         /* Custom color picker */
         #color-picker {
             display: none;
             /* Initially hidden */
-            position: absolute;
-            top: 50px;
-            /* Adjust as needed */
-            left: 10px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 10px;
-            border-radius: 5px;
-            z-index: 10;
-            /* Ensure it's on top */
+            margin-top: 10px;
         }
 
         #color-picker button {
@@ -150,24 +173,30 @@
 </head>
 
 <body>
-    <!-- Theme toggle button -->
-    <button id="theme-button">Toggle Theme</button>
-
-    <!-- Color picker -->
-    <div id="color-picker">
-        <button class="color-red" data-color="red"></button>
-        <button class="color-green" data-color="green"></button>
-        <button class="color-blue" data-color="blue"></button>
-        <button class="color-yellow" data-color="yellow"></button>
-        <button class="color-purple" data-color="purple"></button>
-        <button class="color-orange" data-color="orange"></button>
-        <button class="color-pink" data-color="pink"></button>
-        <button class="color-teal" data-color="teal"></button>
+    <!-- Settings icon and dropdown -->
+    <div class="settings-container">
+        <button class="settings-icon"><i class="fas fa-cog"></i></button>
+        <div class="dropdown-content">
+            <button id="day-theme-button">Day Theme</button>
+            <button id="night-theme-button">Night Theme</button>
+            <button id="custom-theme-button">Custom Theme</button>
+            <div id="color-picker">
+                <button class="color-red" data-color="red"></button>
+                <button class="color-green" data-color="green"></button>
+                <button class="color-blue" data-color="blue"></button>
+                <button class="color-yellow" data-color="yellow"></button>
+                <button class="color-purple" data-color="purple"></button>
+                <button class="color-orange" data-color="orange"></button>
+                <button class="color-pink" data-color="pink"></button>
+                <button class="color-teal" data-color="teal"></button>
+            </div>
+        </div>
     </div>
 
     <div id="countdown-container">
         <!-- Countdown timers will be dynamically added here -->
     </div>
+
 
 
     <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
