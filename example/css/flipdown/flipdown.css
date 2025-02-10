@@ -70,16 +70,18 @@
 
 .flipdown {
   overflow: visible;
-  width: 510px;
-  height: 110px;
+  /* width: 510px;  REMOVED */
+  /* height: 110px; REMOVED */
+    display: flex; /* ADDED */
+    justify-content: center;
+    align-items: center;
 }
 
 .flipdown .rotor-group {
   position: relative;
-  float: left;
+  /* float: left; REMOVED */
   padding-right: 30px;
 }
-
 .flipdown .rotor-group:last-child {
   padding-right: 0;
 }
