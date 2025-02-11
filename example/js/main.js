@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const nightThemeButton = document.getElementById('night-theme-button');
   const customThemeButton = document.getElementById('custom-theme-button');
   const colorPicker = document.getElementById('color-picker');
-  let currentTheme = 'day'; // Default theme
+  let currentTheme = 'night'; // Default theme
 
   // Function to fetch the countdowns.json file
   async function loadCountdowns() {
@@ -32,6 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
       flipdownDiv.className = 'flipdown';
       exampleDiv.appendChild(flipdownDiv);
 
+      const text = document.createElement('p');
+      const strong = document.createElement('strong');
+      strong.textContent = countdownConfig.text;
+      text.appendChild(strong)
+      exampleDiv.appendChild(text);
+      
       return exampleDiv;
   }
 
@@ -83,7 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to apply the theme on start
   function applyThemeOnStart() {
-      applyTheme(currentTheme);
+      //applyTheme(currentTheme);
+      applyTheme('custom', 'orange');
+      currentTheme = 'custom';
   }
 
   // Main function to initialize and start the countdowns
