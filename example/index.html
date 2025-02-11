@@ -13,23 +13,31 @@
         /* Modified CSS for centered and themeable layout */
         html {
             height: 100%;
+            overflow: auto;
+            /* Or overflow-y: scroll; if you always want a scrollbar */
         }
 
         body {
             margin: 0;
-            height: 100%;
+            height: auto;
+            /* Let content determine height */
+            min-height: 100%;
+            /* Ensure it's at least the viewport height */
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            /* Allow for content to flow vertically */
+            justify-content: flex-start;
+            /* Align to the top */
             align-items: center;
             background-color: #fff;
             transition: background-color 0.3s ease;
-            /* Smooth transition for theme changes */
             max-width: 1200px;
             /* Limit maximum width of the page */
             margin: 0 auto;
             /* Center the page horizontally */
             font-family: 'Roboto', sans-serif;
-
+            overflow: auto;
+            /*Or overflow-y: scroll; */
         }
 
         #countdown-container {
@@ -39,7 +47,7 @@
             align-items: center;
             /* Center horizontally */
             width: auto;
-            /* Fixed width or auto? */
+            /* Allow width to adapt */
             margin: 20px auto;
             /* Center the column */
         }
@@ -47,7 +55,7 @@
         .example {
             width: auto;
             /* set the example width to be fixed so it can be set on its own row */
-            height: 250px;
+            height: auto;
             margin: 10px;
             padding: 10px;
             box-sizing: border-box;
@@ -56,7 +64,7 @@
 
         .example h1 {
             text-align: center;
-            font-weight: 100;
+            font-weight: 400;
             font-size: 2em;
             margin-top: 0;
             margin-bottom: 5px;
@@ -181,22 +189,35 @@
             <button id="night-theme-button">Night Theme</button>
             <button id="custom-theme-button">Custom Theme</button>
             <div id="color-picker">
-                <button class="color-red" data-color="red"></button>
-                <button class="color-green" data-color="green"></button>
-                <button class="color-blue" data-color="blue"></button>
-                <button class="color-yellow" data-color="yellow"></button>
-                <button class="color-purple" data-color="purple"></button>
-                <button class="color-orange" data-color="orange"></button>
-                <button class="color-pink" data-color="pink"></button>
-                <button class="color-teal" data-color="teal"></button>
+              <button class="color-red" data-color="red" style="background-color: red; border-color:black;"></button>
+              <button class="color-green" data-color="green" style="background-color: green; border-color:black;"></button>
+              <button class="color-blue" data-color="blue" style="background-color: blue; border-color:black;"></button>
+              <button class="color-yellow" data-color="yellow" style="background-color: yellow; border-color:black;"></button>
+              <button class="color-purple" data-color="purple" style="background-color: purple; border-color:black;"></button>
+              <button class="color-orange" data-color="orange" style="background-color: orange; border-color:black;"></button>
+              <button class="color-pink" data-color="pink" style="background-color: pink; border-color:black;"></button>
+              <button class="color-teal" data-color="teal" style="background-color: teal; border-color:black;"></button>
+              <button class="color-gold" data-color="gold" style="background-color: gold; border-color:black;"></button>
+              <button class="color-lavender" data-color="lavender" style="background-color: lavender; border-color:black;"></button>
+              <button class="color-lightcoral" data-color="lightcoral" style="background-color: lightcoral; border-color:black;"></button>
+              <button class="color-palegreen" data-color="palegreen" style="background-color: palegreen; border-color:black;"></button>
+              <button class="color-skyblue" data-color="skyblue" style="background-color: skyblue; border-color:black;"></button>
+              <button class="color-lightsalmon" data-color="lightsalmon" style="background-color: lightsalmon; border-color:black;"></button>
+              <button class="color-khaki" data-color="khaki" style="background-color: khaki; border-color:black;"></button>
+              <button class="color-thistle" data-color="thistle" style="background-color: thistle; border-color:black;"></button>
+              <button class="color-aquamarine" data-color="aquamarine" style="background-color: aquamarine; border-color:black;"></button>
+              <button class="color-mintcream" data-color="mintcream" style="background-color: mintcream; border-color:black;"></button>
+              <button class="color-azure" data-color="azure" style="background-color: azure; border-color:black;"></button>
+ 
             </div>
+          </div>
+          <p>Click to change theme</p>
         </div>
     </div>
 
     <div id="countdown-container">
         <!-- Countdown timers will be dynamically added here -->
     </div>
-
 
 
     <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
