@@ -1,4 +1,4 @@
-<span style="text-align:center;display:block;width:100%;"><img src="https://imgur.com/a/M2vM9ro" style="width:75%" title="Example of FlipDown-Coursework" style="width: 500px;text-align:center"></span>
+<span style="text-align:center;display:block;width:100%;"><img src="([https://imgur.com/a/M2vM9ro](https://example.com))" style="width:75%" title="Example of FlipDown-Coursework" style="width: 500px;text-align:center"></span>
 
 # FlipDown-Coursework
 
