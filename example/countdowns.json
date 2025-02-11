@@ -2,12 +2,13 @@
   {
     "id": "flipdown1",
     "title": "IDP ASSIGNMENT 1",
-    "year": 2027,
+    "year": 20235,
     "month": 2,
-    "day": 23,
+    "day": 24,
     "hours": 0,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Sunday 24rd February 2025 12:00 am"
   },
   {
     "id": "flipdown2",
@@ -17,7 +18,8 @@
     "day": 3,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 3rd March 2025 12:00 pm"
   },
   {
     "id": "flipdown3",
@@ -27,7 +29,8 @@
     "day": 3,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 3rd March 2025 12:00 pm"
   },
   {
     "id": "flipdown4",
@@ -37,7 +40,8 @@
     "day": 3,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 3rd March 2025 12:00 pm"
   },
   {
     "id": "flipdown5",
@@ -47,7 +51,8 @@
     "day": 3,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 3rd March 2025 12:00 pm"
   },
   {
     "id": "flipdown6",
@@ -57,17 +62,19 @@
     "day": 10,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 10th March 2025 12:00 pm"
   },
   {
     "id": "flipdown7",
-    "title": "MICROPROCESSOR QUIZ 1",
+    "title": "MICROPROCESSOR LAB QUIZ 1",
     "year": 2025,
     "month": 3,
     "day": 17,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 17th March 2025 12:00 pm"
   },
   {
     "id": "flipdown8",
@@ -77,7 +84,8 @@
     "day": 31,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 31st March 2025 12:00 pm"
   },
   {
     "id": "flipdown9",
@@ -87,7 +95,8 @@
     "day": 7,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 7th April 2025 12:00 pm"
   },
   {
     "id": "flipdown10",
@@ -97,7 +106,8 @@
     "day": 7,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 7th April 2025 12:00 pm"
   },
   {
     "id": "flipdown11",
@@ -107,7 +117,8 @@
     "day": 7,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 7th April 2025 12:00 pm"
   },
   {
     "id": "flipdown12",
@@ -117,7 +128,8 @@
     "day": 14,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 14th April 2025 12:00 pm"
   },
   {
     "id": "flipdown13",
@@ -127,7 +139,8 @@
     "day": 14,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 14th April 2025 12:00 pm"
   },
   {
     "id": "flipdown14",
@@ -137,7 +150,8 @@
     "day": 14,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 14th April 2025 12:00 pm"
   },
   {
     "id": "flipdown15",
@@ -147,7 +161,8 @@
     "day": 14,
     "hours": 12,
     "minutes": 0,
-    "seconds": 7
+    "seconds": 0,
+    "text": "Monday 14th April 2025 12:00 pm"
   },
   {
     "id": "flipdown16",
@@ -157,6 +172,7 @@
     "day": 30,
     "hours": 12,
     "minutes": 0,
-    "seconds": 6
+    "seconds": 6,
+    "text": "Wednesday 30th April 2025 12:00 pm"
   }
 ]
