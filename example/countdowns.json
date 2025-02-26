@@ -5,32 +5,32 @@
     "year": 2025,
     "month": 2,
     "day": 28,
-    "hours": 0,
+    "hours": 17,
     "minutes": 0,
     "seconds": 0,
-    "text": "Friday 28rd February 2025 12:00 am"
+    "text": "Friday 28rd February 2025 5:00 pm"
   },
   {
     "id": "flipdown2",
     "title": "ELECTROMAGNETICS QUIZ 1",
     "year": 2025,
     "month": 3,
-    "day": 3,
-    "hours": 12,
-    "minutes": 0,
+    "day": 4,
+    "hours": 23,
+    "minutes": 30,
     "seconds": 0,
-    "text": "Monday 3rd March 2025 12:00 pm"
+    "text": "Tuesday 4rd March 2025 11:30 pm"
   },
   {
     "id": "flipdown3",
     "title": "ANALOGUE ELECTRONICS QUIZ 1",
     "year": 2025,
     "month": 3,
-    "day": 3,
-    "hours": 12,
-    "minutes": 0,
+    "day": 4,
+    "hours": 23,
+    "minutes": 30,
     "seconds": 0,
-    "text": "Monday 3rd March 2025 12:00 pm"
+    "text": "Tuesday 4rd March 2025 11:30 pm"
   },
   {
     "id": "flipdown4",
@@ -38,10 +38,10 @@
     "year": 2025,
     "month": 3,
     "day": 3,
-    "hours": 12,
+    "hours": 18,
     "minutes": 0,
     "seconds": 0,
-    "text": "Monday 3rd March 2025 12:00 pm"
+    "text": "Monday 3rd March 2025 6:00 pm"
   },
   {
     "id": "flipdown5",
@@ -49,10 +49,10 @@
     "year": 2025,
     "month": 3,
     "day": 3,
-    "hours": 12,
-    "minutes": 0,
+    "hours": 23,
+    "minutes": 59,
     "seconds": 0,
-    "text": "Monday 3rd March 2025 12:00 pm"
+    "text": "Monday 3rd March 2025 11:59 pm"
   },
   {
     "id": "flipdown6",
